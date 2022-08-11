@@ -5,7 +5,7 @@ import LandingPage from "./pages/LandingPage";
 export default function App() {
   return (
       <Routes>
-        <Route path="/:token/:id" element={<LandingPage />} />
+        <Route exact path="/tamu/:token/:id" element={<LandingPage />} />
       </Routes>
   );
 }
