@@ -2,16 +2,19 @@ import '../App.css';
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import {BiDownArrowAlt} from "react-icons/bi"
-import {FiInstagram} from "react-icons/fi"
-import {BsFillHeartFill} from "react-icons/bs"
+import {FiInstagram, FiClock} from "react-icons/fi"
+import {BsFillHeartFill, BsFillCalendarCheckFill} from "react-icons/bs"
 import { Link } from "react-scroll";
 import AOS from 'aos';
 import "aos/dist/aos.css"
+
+import Maps from '../components/Maps';
 
 
 import flowers from "../assets/flowers.png"
 import man1 from "../assets/man1.jpg"
 import women1 from "../assets/women1.jpg"
+
 
 function LandingPage() {
   const [showModal, setShowModal] = useState(true)
@@ -78,7 +81,7 @@ function LandingPage() {
   const Section2 = () => {
     return (
       <div id={"section2"} className="h-screen flex flex-col px-8 md:px-24 md:py-10 py-10 " style={{backgroundColor: "#FFEEEE"}}>
-        <h3 className='text-2xl font-semibold text-center' style={{color: "#A35B66"}}>Calon Pengantin</h3>
+        <h3 className='text-xl md:text-2xl font-semibold text-center' style={{color: "#A35B66"}}>Calon Pengantin</h3>
         <div className='flex flex-col md:flex-row mt-20 items-center'>
           <div data-aos="zoom-in-down" style={{backgroundColor: "#FFD5DE"}} className="flex flex-col gap-8 px-5 py-5 rounded-2xl md:w-128">
             <div style={{borderColor: "#ebbcc6"}} className='flex flex-row gap-5 items-center border-2 px-4 py-5 rounded-2xl'>
@@ -122,7 +125,7 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        <Link to="section2"
+        <Link to="section3"
           spy={true}
           smooth={true}
           duration={1000} 
@@ -132,6 +135,84 @@ function LandingPage() {
       </div>
     );
   };
+
+  const Section3 = () => {
+    return (
+      <div id={"section3"} className="h-screen flex flex-col py-10" style={{backgroundColor: "#FFD5DE"}}>
+        <div className='flex flex-col gap-4 px-10 md:px-48'>
+          <h3 className='text-xl md:text-2xl font-semibold text-center' style={{color: "#A35B66"}}>Undangan dan Pengantin</h3>
+          <p className='italic lowercase text-center text-xs md:text-base' style={{color: "#A35B66"}}>BAHAGIA RASANYA APABILA ANDA BERKENAN HADIR DAN MEMBERIKAN DOA RESTU KEPADA KAMI. KAMI MENGUNDANG ANDA UNTUK HADIR DALAM ACARA RESEPSI PERNIKAHAN KAMI BERIKUT INI</p>
+        </div>
+        <div className='w-full flex justify-center'>
+          <div className='flex flex-col md:flex-row gap-10 mt-10 md:mt-20'>
+            <div data-aos="zoom-in-down" className='card1 px-7 md:px-8 py-3 md:py-5'>
+              <div className='text-base md:text-xl py-2 md:py-4 w-full text-center' style={{color: "#A35B66", borderColor: "rgba(255, 187, 187, 0.736)", borderBottomWidth: "1.5px"}}>Akad Nikah</div>
+              <div className='flex flex-row gap-10'>
+                <div className='flex flex-col items-center'>
+                  <BsFillCalendarCheckFill color="#A35B66"/>
+                  <div style={{color: "#A35B66"}} className="text-xs md:text-sm">Minggu</div>
+                  <div style={{color: "#A35B66"}} className="text-xs md:text-sm">06 November 2022</div>
+                </div>
+                <div className='flex flex-col items-center'>
+                  <FiClock color="#A35B66"/>
+                  <div style={{color: "#A35B66"}} className="text-xs md:text-sm">Pukul</div>
+                  <div style={{color: "#A35B66"}} className="text-xs md:text-sm">09:00 - 12:00 WIB</div>
+                </div>
+              </div>
+              <div className='w-56 md:w-96 text-center text-xs md:text-sm' style={{color: "#A35B66"}}>
+                Bertempat di Jl.pasundan rt.37 rw.07 palembang (Dekat gedung graha pinang masak)
+              </div>
+            </div>
+            <div data-aos="zoom-in-up" className='card1 px-7 md:px-8 py-3 md:py-5'>
+              <div className='text-base md:text-xl py-2 md:py-4 w-full text-center' style={{color: "#A35B66", borderColor: "rgba(255, 187, 187, 0.736)", borderBottomWidth: "1.5px"}}>Resepsi Pernikahan</div>
+              <div className='flex flex-row gap-10'>
+                <div className='flex flex-col items-center'>
+                  <BsFillCalendarCheckFill color="#A35B66"/>
+                  <div style={{color: "#A35B66"}} className="text-xs md:text-sm">Minggu</div>
+                  <div style={{color: "#A35B66"}} className="text-xs md:text-sm">06 November 2022</div>
+                </div>
+                <div className='flex flex-col items-center'>
+                  <FiClock color="#A35B66"/>
+                  <div style={{color: "#A35B66"}} className="text-xs md:text-sm">Pukul</div>
+                  <div style={{color: "#A35B66"}} className="text-xs md:text-sm">09:00 - 12:00 WIB</div>
+                </div>
+              </div>
+              <div className='w-56 md:w-96 text-center text-xs md:text-sm' style={{color: "#A35B66"}}>
+                Bertempat di Jl.pasundan rt.37 rw.07 palembang (Dekat gedung graha pinang masak)
+              </div>
+            </div>
+          </div>
+        </div>
+        <Link to="section4"
+          spy={true}
+          smooth={true}
+          duration={1000} 
+          className='bg-white text-pink-500 rounded-full mx-12 md:mx-24 w-10 h-10 flex justify-center items-center animate-bounce cursor-pointer mt-10'>
+          <BiDownArrowAlt size={30}/>
+        </Link>
+      </div>
+    );
+  };
+
+
+  const Section4 = () => {
+    return (
+      <div id={"section4"} className="h-screen flex flex-col py-10" style={{backgroundColor: "#FFEEEE"}}>
+        <div className='flex flex-col gap-4 px-10 md:px-48'>
+          <h3 className='text-xl md:text-2xl font-semibold text-center' style={{color: "#A35B66"}}>Peta Lokasi</h3>
+          <p className='italic lowercase text-center text-xs md:text-base' style={{color: "#A35B66"}}>Anda dapat menuju lokasi acara kami dengan bantuan peta dibawah ini. Atau anda bisa buka di</p>
+          <div className="flex w-full justify-center">
+            <div onClick={e => openInNewTab("https://goo.gl/maps/uRwTaZMp6ugP6PtH8")} className='cursor-pointer w-60 text-center bg-white py-4 px-6 md:px-8 md:py-4 rounded-full mt-3 animate-bounce text-pink-400 text-xs md:text-sm'>
+              Buka di Google Maps
+            </div>
+          </div>
+        </div>
+        <Maps/>
+      </div>
+    );
+  };
+
+  
 
 
   return (
@@ -156,6 +237,8 @@ function LandingPage() {
       </div>
       <Section1/>
       <Section2/>
+      <Section3/>
+      <Section4/>
     </>
   );
 }
