@@ -19,7 +19,9 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: "15px"
+    marginTop: "15px",
+    paddingLeft: "18px",
+    paddingRight: "18px"
   }
 
   return (

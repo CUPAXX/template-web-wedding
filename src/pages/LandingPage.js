@@ -12,6 +12,7 @@ import Maps from '../components/Maps';
 
 
 import flowers from "../assets/flowers.png"
+import flower2 from "../assets/flower2.png"
 import man1 from "../assets/man1.jpg"
 import women1 from "../assets/women1.jpg"
 
@@ -212,7 +213,19 @@ function LandingPage() {
     );
   };
 
-  
+  const Section5 = () => {
+    return (
+      <div id={"section5"} className="flex flex-col items-center justify-center" style={{backgroundColor: "#FFD5DE", height: "90vh"}}>
+        <div className='flex flex-col md:flex-row px-8 md:px-24 md:py-0 py-10 items-center md:gap-20'>
+          <img src={flower2} alt="flowers" className='md:w-96 w-44 animate-pulse -rotate-180'/>
+          <div className='flex flex-col gap-8 md:gap-10'>
+            <h3 className='italic md:text-left text-center text-lg md:text-2xl font-semibold' style={{color: "#A35B66"}}>Protokol Kesehatan</h3>
+            <p className='italic text-justify md:text-left' style={{color: "#A35B66"}}>Mohon untuk anda sahabat/kerabat dan saudara kami yang akan datang ke Akad maupun resepsi pernikahan kami untuk tetap memperhatikan protokol kesehatan yaitu Menggunakan Masker, Menjaga Jarak, Mencuci Tangan dan selalu menjaga kesehatan dan juga imun tubuh. Terima kasih</p>
+          </div>
+        </div>
+      </div>
+    );
+  };
 
 
   return (
@@ -239,6 +252,23 @@ function LandingPage() {
       <Section2/>
       <Section3/>
       <Section4/>
+      <Section5/>
+      <div className=' hidden md:visible md:flex md:flex-row md:gap-10 text-xs md:text-sm justify-center items-center py-5' style={{color: "#A35B66", backgroundColor: "#FFD5DE"}}>
+          <h3>Copyright © 2022 CUPAXXHD</h3>
+          <span>|</span>
+          <h3 className='cursor-pointer hover:underline' onClick={e => openInNewTab("https://www.linkedin.com/in/fiqry-arahmansyah")}>Reach Me On Linkedin</h3>
+          <span>|</span>
+          <h3 className='cursor-pointer hover:underline' onClick={e => openInNewTab("https://github.com/CUPAXX")}>See Me in Github</h3>
+          <span>|</span>
+          <h3>Created With React Js</h3>
+        </div>
+        <div  style={{color: "#A35B66", backgroundColor: "#FFD5DE"}} className='flex flex-col justify-center items-center gap-3 md:hidden text-xs py-8 px-5'>
+          <div className='flex justify-between w-full'>
+            <h3>Copyright © 2022 CUPAXXHD</h3>
+            <span>|</span>
+            <h3 className='cursor-pointer hover:underline' onClick={e => openInNewTab("https://www.linkedin.com/in/fiqry-arahmansyah")}>Reach Me On Linkedin</h3>
+          </div>
+        </div>
     </>
   );
 }
