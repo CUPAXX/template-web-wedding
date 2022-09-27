@@ -33,7 +33,7 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
         containerStyle={containerStyle}
         initialCenter={{ lat: -2.063892893066391,  lng: 102.29863641052873}}
       >
-        <Marker position={{ lat: -2.064024044871298,  lng: 102.29783057507825}} />
+        <Marker position={{ lat: -2.0646720276450754, lng: 102.2969701014051}} />
       </Map>
     </div>
   );
