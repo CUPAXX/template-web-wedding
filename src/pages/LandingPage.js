@@ -203,7 +203,7 @@ function LandingPage() {
           <h3 className='text-xl md:text-2xl font-semibold text-center' style={{color: "#554D74"}}>Peta Lokasi</h3>
           <p className='italic lowercase text-center text-xs md:text-base' style={{color: "#554D74"}}>Anda dapat menuju lokasi acara kami dengan bantuan peta dibawah ini. Atau anda bisa buka di</p>
           <div className="flex w-full justify-center">
-            <div onClick={e => openInNewTab("https://goo.gl/maps/cCjpDYog6zwLubN98")} className='cursor-pointer w-60 text-center bg-white py-4 px-6 md:px-8 md:py-4 rounded-full mt-3 animate-bounce text-purple-400 text-xs md:text-sm'>
+            <div onClick={e => openInNewTab("https://goo.gl/maps/4tZtXvgBNyTq1bUu9")} className='cursor-pointer w-60 text-center bg-white py-4 px-6 md:px-8 md:py-4 rounded-full mt-3 animate-bounce text-purple-400 text-xs md:text-sm'>
               Buka di Google Maps
             </div>
           </div>
