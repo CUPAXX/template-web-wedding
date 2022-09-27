@@ -234,7 +234,7 @@ function LandingPage() {
       <div className='bg-banner'>
         <Modal/>
         <div className='overlay'>
-          <h1 className='text-white text-6xl md:text-8xl text-center'>Wredo & Gadis</h1>
+          <h1 className='text-white text-6xl md:text-8xl text-center'>Edo & Gadis</h1>
           <h3 className='text-white text-xs pt-4 md:text-lg'>Akan segera melangsungkan pernikahan</h3>
           <p className='text-yellow-500 text-xs pt-2 md:text-lg'>Senin, 03 Oktober 2022</p>
           <Link
