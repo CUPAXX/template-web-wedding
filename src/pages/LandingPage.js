@@ -52,7 +52,7 @@ function LandingPage() {
           <div className='flex gap-1 md:gap-3 flex-col'>
             <div className='text-sm md:text-lg capitalize'>{sanitizedName}</div>
             <div className='text-xs md:text-base text-center'>&</div>
-            <div className='text-xs md:text-base text-center'>{id === "keluarga" ? "Keluarga" : "Patner"}</div>
+            <div className='text-xs md:text-base text-center'>{id === "keluarga" ? "Keluarga" : "Partner"}</div>
           </div>
           <div onClick={onHideModal} className='bg-pink-400 text-white font-semibold px-4 py-2 rounded-md cursor-pointer animate-pulse'>Buka Undangan</div>
         </div>
